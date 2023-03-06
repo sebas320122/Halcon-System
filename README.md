@@ -1,9 +1,6 @@
-# Halcon-System
-- Autor: Sebastian García Lizarraga
-- Fecha de creación: 21/02/2023
-- Descripción: Software para llevar control de la orden de un cliente, desde que se registra la orden hasta su debida entrega.
-# Usuarios
-- Vendedor: Registra orden y la manda a almacen
-- Almacen: Recibe orden, la procesa y envía
-- Compras: Llena stock de material faltante
-- Transitorio: Subi fotos de carga y entrega de la orden
+# Informacion 
+- Proyecto: Tarea 6
+- Descripción: Hacer registros en la BD con seeders y factory
+# Diagrama ER
+![DAW_act7_er](https://user-images.githubusercontent.com/105032591/223000216-504d295b-7c25-4546-9e74-541718d4ad02.jpeg)
+
