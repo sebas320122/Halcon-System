@@ -16,3 +16,8 @@
 ### Actualización 2: Evidencia 3 05/05/2023
 ##### commit ev3pt1
 - Se habilito la funcion de cerrar sesion app.blade.php
+##### commit ev3pt2
+- Se implemento la subida de imagenes en los campos de fotos
+- se mdoifico el seeder para agregar imagenes desde la carpeta uploads
+##### commit ev3pt3
+- Se instalo AdminLTE 3 y se agrego al view home

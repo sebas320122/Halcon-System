@@ -1,34 +1,19 @@
-@extends('layouts.app')
+@extends('adminlte::page')
+
+@section('title', 'AdminLTE')
+
+@section('content_header')
+    <h1 class="m-0 text-dark">Dashboard</h1>
+@stop
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+    <div class="row">
+        <div class="col-12">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    
-                    <!---3.4 Crear boton usuarios para dashboard--->
-                                <a class="btn btn-primary" href="{{ route('usuarios.index') }}">Usuarios</a>
-                                 <!---4.9 Agregar boton a dashboard--->
-                                 <br>
-                                 <br>
-                                  <!---5.6 Agregar boton a dashboard--->
-                                  <a class="btn btn-primary" href="{{ route('ordenes.index') }}">Ordenes</a>
-                                <!--6.3 Agregar boton para ordenes archivadas-->
-                                <br>
-                                 <br>
-                                <a class="btn btn-primary" href="{{ route('ordenes.archivadas') }}">Ordenes archivadas</a>
+                    <p class="mb-0">Bienvenido</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
-@endsection
+@stop

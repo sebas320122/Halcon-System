@@ -17,8 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+//7 Implementar apartado de clientes
+Route::get('inicio', 'App\Http\Controllers\OrdenController@buscar_orden')->name('clientes.inicio');
 
+
+Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //3.3 Creaer ruta hacia usuarios
 //4 Implementar crud para usuarios
@@ -45,7 +48,4 @@ Route::middleware(['auth'])->group(function () {
     Route::get('archivadas', 'App\Http\Controllers\OrdenController@index_archivadas')->name('ordenes.archivadas');
     
 });
-
-//7 Implementar apartado de clientes
-Route::get('inicio', 'App\Http\Controllers\OrdenController@buscar_orden')->name('clientes.inicio');
 
