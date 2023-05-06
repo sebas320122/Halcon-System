@@ -11,17 +11,17 @@
                 <div class="card-body">
                     <div class="alert alert-success" role="alert">
                         La orden se encuentra en estado "{{ $orden->estado }}".
+                        
                         <!--7.5 mostrar link de imagen enviado/entregado-->
                         
                         @if ($orden->foto_carga)
-                            <p>{{ $orden->foto_carga }}</p>
-                            <img src="{{ $orden->foto_carga }}" alt="Image" width="600" height="400">
+                            <!--<p>{{ $orden->foto_carga }}</p>-->
+                            <img src="{{ asset('storage/' . $orden->foto_carga) }}" alt="Imagen" width="400" height="300">
                         @endif
 
-    
                         @if ($orden->foto_entrega)
-                            <p>{{ $orden->foto_entrega }}</p>
-                            <img src="{{ $orden->foto_entrega }}" alt="Image" width="600" height="400">
+                            <!--<p>{{ $orden->foto_entrega }}</p>-->
+                            <img src="{{ asset('storage/' . $orden->foto_entrega) }}" alt="Imagen" width="400" height="300">
                         @endif
                     </div>                   
                 </div>

@@ -66,7 +66,7 @@ class OrdenSeeder extends Seeder
                 'datos_fiscales' => 'Datos 5', 
                 'direccion' => 'Direccion 5',
                 'estado' => 'enviado',
-                'foto_carga' => 'https://diexmexico.com/wp-content/uploads/2021/08/CEMOC_BANNER1.jpg',
+                'foto_carga' => 'uploads/envio_ejemplo.jpg',
                 'foto_entrega' => null,
                 'material_id' => '5',
             ],
@@ -78,7 +78,7 @@ class OrdenSeeder extends Seeder
                 'direccion' => 'Direccion 6',
                 'estado' => 'entregado',
                 'foto_carga' => null,
-                'foto_entrega' => 'https://www.mndelgolfo.com/blog/wp-content/uploads/2021/04/Consejos-para-aumentar-el-tiempo-de-vida-del-cemento1-640x360.jpg',
+                'foto_entrega' => 'uploads/entrega_ejemplo.jpg',
                 'material_id' => '6',
             ]
             

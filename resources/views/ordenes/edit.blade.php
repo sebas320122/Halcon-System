@@ -61,16 +61,18 @@
           <input type="text" class="form-control" name="material_id" value="{{ $orden->material_id }}" /> 
         </div> 
 
-    <!--5.9 Mostar foto de carga si estado es enviado-->
+    <!--Campo para subir fotos oculto-->
    <div class="form-group" id="foto_carga_div" style="display:none;">
-    <label for="foto_carga">Foto de carga (url):</label>
-    <input type="text" class="form-control" id="foto_carga" name="foto_carga">
+    <label for="foto_carga">Foto de carga:</label>
+    <br>
+    <input type="file" class="form-control-file" id="foto_carga" name="foto_carga">
 </div>
 <div class="form-group" id="foto_entrega_div" style="display:none;">
-    <label for="foto_entrega">Foto de entrega (url):</label>
+    <label for="foto_entrega">Foto de entrega:</label>
     <br>
-    <input type="text" class="form-control" id="foto_entrega" name="foto_entrega">
+    <input type="file" class="form-control-file" id="foto_entrega" name="foto_entrega">
 </div>
+<!--Mostrar si tienen estos estados-->
 @if($orden->estado == 'enviado')
     <script>
         document.getElementById("foto_carga_div").style.display = "block";
