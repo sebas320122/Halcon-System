@@ -309,7 +309,11 @@ return [
         ],
        
         ['header' => 'Acciones'],
-       
+        [
+            'text' => 'Inicio',
+            'icon' => 'fas fa-fw fa-home',
+            'route'  => 'home',
+        ],
         [
             'text'    => 'Usuarios',
             'icon'    => 'fas fa-fw fa-user',

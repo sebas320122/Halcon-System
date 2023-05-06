@@ -44,6 +44,7 @@ class OrdenController extends Controller
           ]); 
           Orden::create($validatedData); 
         
+          //Devolver alerta tipo succes
           return redirect('/ordenes')->with('success', 'Orden registrada'); 
     }
 
@@ -95,7 +96,8 @@ class OrdenController extends Controller
       
       Orden::whereId($id)->update($validatedData); 
     
-      return redirect('/ordenes')->with('success', 'Orden actualizada'); 
+      //Devolver alerta tipo info
+      return redirect('/ordenes')->with('info', 'Orden actualizada'); 
     } 
 
     /**
@@ -106,7 +108,8 @@ class OrdenController extends Controller
         $orden = Orden::findOrFail($id); 
         $orden->delete(); 
 
-    return redirect('/ordenes')->with('success', 'Orden eliminada'); 
+    //Devolver alerta tipo danger
+    return redirect('/ordenes')->with('danger', 'Orden eliminada'); 
     }
 
     //6.2 Agregar funcion para mostrar ordenes archivdas

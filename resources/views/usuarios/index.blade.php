@@ -10,9 +10,20 @@
     } 
   </style> 
   <div class="margin"> 
+    <!--Recibir alertas-->
     @if (session()->get('success')) 
       <div class="alert alert-success"> 
         {{ session()->get('success') }} 
+      </div><br /> 
+    @endif 
+    @if (session()->get('info')) 
+      <div class="alert alert-info"> 
+        {{ session()->get('info') }} 
+      </div><br /> 
+    @endif 
+    @if (session()->get('danger')) 
+      <div class="alert alert-danger"> 
+        {{ session()->get('danger') }} 
       </div><br /> 
     @endif 
     

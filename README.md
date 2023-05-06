@@ -25,3 +25,6 @@
 #### 06/05/2023
 ##### commit ev3pt4
 - Se implemento plantilla de AdminLTE a todas las views para usuarios
+##### commit ev3pt5
+- Se implemento opcion para ir al inicio para usuarios
+- Se personalizo el color de las alertas en las tablas de usuarios y ordenes segun la accion realizada
