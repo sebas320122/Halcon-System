@@ -1,4 +1,6 @@
-@extends('layouts.app') 
+@extends('adminlte::page')
+
+@section('title', 'Agregar orden')
 @section('content') 
 <!--5.2 crear view create-->
   <style> 
@@ -63,4 +65,4 @@
       </form> 
     </div> 
   </div> 
-@endsection 
+@stop 

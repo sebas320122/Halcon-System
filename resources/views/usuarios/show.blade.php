@@ -1,4 +1,6 @@
-@extends('layouts.app') 
+@extends('adminlte::page')
+
+@section('title', 'Informacion de usuario')
 
 @section('content') 
 <!--4.4 crear view show-->
@@ -44,4 +46,4 @@
       <a href="{{ route('usuarios.index') }}" class="btn btn-primary">Index</a> 
     </div> 
   </div> 
-@endsection 
+@stop 

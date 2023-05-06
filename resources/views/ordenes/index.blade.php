@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('adminlte::page')
+
+@section('title', 'Ver ordenes')
 
 @section('content')
 <!--5.1 modificar view index-->
@@ -52,4 +54,4 @@
       </tbody> 
       </table> 
   <div> 
-@endsection
+@stop

@@ -1,5 +1,6 @@
-@extends('layouts.app') 
+@extends('adminlte::page')
 
+@section('title', 'Editar orden')
 @section('content') 
 <!--5.3 crear view edit-->
   <style> 
@@ -88,4 +89,4 @@
       </form> 
     </div> 
   </div> 
-@endsection 
+@stop 

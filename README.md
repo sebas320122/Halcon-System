@@ -13,7 +13,8 @@
 - se actualizo el repositorio
 - se modifico el archivo readme con cambios hechos
 
-### Actualización 2: Evidencia 3 05/05/2023
+### Actualización 2: Evidencia 3 
+#### 05/05/2023
 ##### commit ev3pt1
 - Se habilito la funcion de cerrar sesion app.blade.php
 ##### commit ev3pt2
@@ -21,3 +22,6 @@
 - se mdoifico el seeder para agregar imagenes desde la carpeta uploads
 ##### commit ev3pt3
 - Se instalo AdminLTE 3 y se agrego al view home
+#### 06/05/2023
+##### commit ev3pt4
+- Se implemento plantilla de AdminLTE a todas las views para usuarios

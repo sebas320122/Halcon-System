@@ -1,5 +1,6 @@
-@extends('layouts.app')
+@extends('adminlte::page')
 
+@section('title', 'Ver ordenes archivadas')
 @section('content')
 <!--6.1 modificar view-->
 <style> 
@@ -51,4 +52,4 @@
       </tbody> 
       </table> 
   <div> 
-@endsection
+@stop

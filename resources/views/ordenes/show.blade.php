@@ -1,5 +1,6 @@
-@extends('layouts.app') 
+@extends('adminlte::page')
 
+@section('title', 'Informacion de orden')
 @section('content') 
 <!--5.4 crear view show-->
   <style> 
@@ -57,4 +58,4 @@
       <a href="{{ route('ordenes.index') }}" class="btn btn-primary">Index</a> 
     </div> 
   </div> 
-@endsection 
+@stop 

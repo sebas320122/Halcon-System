@@ -1,4 +1,6 @@
-@extends('layouts.app') 
+@extends('adminlte::page')
+
+@section('title', 'Agregar usuario')
 @section('content') 
 <!--4.2 crear view create-->
   <style> 
@@ -56,4 +58,4 @@
       </form> 
     </div> 
   </div> 
-@endsection 
+@stop 
