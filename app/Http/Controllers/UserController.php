@@ -28,8 +28,9 @@ class UserController extends Controller
     $user = User::findOrFail($id); 
     $user->delete(); 
 
-    //Devolver alerta tipo danger
-    return redirect('/usuarios')->with('danger', 'Usuario eliminado'); 
+    //Devolver alerta tipo danger y notificacion
+    return redirect('/usuarios')->with('danger', 'Usuario eliminado')
+    ->with('toast', 'Se ha eliminado un reigstro'); 
   } 
 
   public function create() 
@@ -48,8 +49,9 @@ class UserController extends Controller
     $validatedData['password'] = Hash::make($validatedData['password']);
     $user = User::create($validatedData);
 
-    //Devolver alerta tipo success
-    return redirect('/usuarios')->with('success', 'Usuario registrado'); 
+    //Devolver alerta tipo success y notificacion
+    return redirect('/usuarios')->with('success', 'Usuario registrado')
+    ->with('toast', 'Se ha agregado un registro'); 
     }   
 
     public function edit($id) 
@@ -67,7 +69,8 @@ class UserController extends Controller
       'status' => 'required|max:100',
       ]); 
       User::whereId($id)->update($validatedData); 
-      //Devolver alerta tipo info
-      return redirect('/usuarios')->with('info', 'Se han actualizado los datos del usuario'); 
+      //Devolver alerta tipo info y notificacion
+      return redirect('/usuarios')->with('info', 'Se han actualizado los datos del usuario')
+      ->with('toast', 'Se ha actualizado un registro'); 
     }     
 }

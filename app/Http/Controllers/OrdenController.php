@@ -44,8 +44,9 @@ class OrdenController extends Controller
           ]); 
           Orden::create($validatedData); 
         
-          //Devolver alerta tipo succes
-          return redirect('/ordenes')->with('success', 'Orden registrada'); 
+          //Devolver alerta tipo succes y notificacion
+          return redirect('/ordenes')->with('success', 'Orden registrada')
+          ->with('toast', 'Se ha agregado un registro'); 
     }
 
     /**
@@ -96,8 +97,9 @@ class OrdenController extends Controller
       
       Orden::whereId($id)->update($validatedData); 
     
-      //Devolver alerta tipo info
-      return redirect('/ordenes')->with('info', 'Orden actualizada'); 
+      //Devolver alerta tipo info y notificacion
+      return redirect('/ordenes')->with('info', 'Orden actualizada')
+      ->with('toast', 'Se ha actualizado un registro'); 
     } 
 
     /**
@@ -108,8 +110,9 @@ class OrdenController extends Controller
         $orden = Orden::findOrFail($id); 
         $orden->delete(); 
 
-    //Devolver alerta tipo danger
-    return redirect('/ordenes')->with('danger', 'Orden eliminada'); 
+    //Devolver alerta tipo danger y notificacion
+    return redirect('/ordenes')->with('danger', 'Orden eliminada')
+    ->with('toast', 'Se ha eliminado un reigstro'); 
     }
 
     //6.2 Agregar funcion para mostrar ordenes archivdas

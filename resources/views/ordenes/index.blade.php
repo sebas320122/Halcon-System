@@ -64,5 +64,20 @@
         @endforeach 
       </tbody> 
       </table> 
+      <!--Recibir notificaciones-->
+      @if (session()->get('toast'))
+
+      <div class="toast show">
+        <div class="toast-header">
+        <strong class="me-auto">Notificacion</strong>
+          <button type="button" class="btn btn-light btn-sm align-self-end ml-auto" data-bs-dismiss="toast">X</button>
+        </div>
+        <div class="toast-body">
+        {{ session()->get('toast') }} 
+        </div>
+    </div>
+    @endif
   <div> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
 @stop

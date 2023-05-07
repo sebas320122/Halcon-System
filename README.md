@@ -28,3 +28,5 @@
 ##### commit ev3pt5
 - Se implemento opcion para ir al inicio para usuarios
 - Se personalizo el color de las alertas en las tablas de usuarios y ordenes segun la accion realizada
+##### commit ev3pt6
+- Se han implementado notificaciones en las tablas de usuarios y ordenes
