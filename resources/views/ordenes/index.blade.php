@@ -27,10 +27,10 @@
       </div><br /> 
     @endif 
     
-      <a class="btn btn-primary" href="{{ route('ordenes.create') }}">Add</a> 
+      <a class="btn btn-success" href="{{ route('ordenes.create') }}">Add</a> 
     
 
-    <table class="table table-striped"> 
+    <table class="table table-striped table-dark"> 
       <thead> 
         <tr> 
           <th>Id</th> 

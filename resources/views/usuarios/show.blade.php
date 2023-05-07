@@ -8,10 +8,10 @@
     .uper { 
       margin-top: 40px; 
     } 
-
+    
   </style> 
-  <div class="card uper"> 
-    <div class="card-header"> 
+  <div class="card uper bg-dark"> 
+    <div class="card-header bg-secondary"> 
       Ver datos 
     </div> 
 

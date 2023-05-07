@@ -19,7 +19,7 @@
 - Se habilito la funcion de cerrar sesion app.blade.php
 ##### commit ev3pt2
 - Se implemento la subida de imagenes en los campos de fotos
-- se mdoifico el seeder para agregar imagenes desde la carpeta uploads
+- se modifico el seeder para agregar imagenes desde la carpeta uploads
 ##### commit ev3pt3
 - Se instalo AdminLTE 3 y se agrego al view home
 #### 06/05/2023
@@ -30,3 +30,8 @@
 - Se personalizo el color de las alertas en las tablas de usuarios y ordenes segun la accion realizada
 ##### commit ev3pt6
 - Se han implementado notificaciones en las tablas de usuarios y ordenes
+##### commit ev3pt7
+- Se cambio el color del navbar y el color del select del sidebar
+- Se realizo modificaciones al diseño de las tablas de usuarios y ordenes
+- Se agrego contenido al dashboard
+- Se cambio el nombre y logo predeterminado por el de HalconSystem

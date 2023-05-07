@@ -9,8 +9,8 @@
     } 
 
   </style> 
-  <div class="card uper"> 
-    <div class="card-header"> 
+  <div class="card uper bg-dark"> 
+    <div class="card-header bg-success"> 
       Agregar orden 
     </div> 
     <div class="card-body"> 

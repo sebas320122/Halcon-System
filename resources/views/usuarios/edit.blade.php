@@ -7,10 +7,10 @@
     .uper { 
       margin-top: 40px; 
     } 
-
+   
   </style> 
-  <div class="card uper"> 
-    <div class="card-header"> 
+  <div class="card uper bg-dark"> 
+    <div class="card-header bg-info"> 
       Editar datos de usuario
     </div> 
     <div class="card-body"> 
@@ -50,6 +50,7 @@
     <option value="inactivo" {{ $user->status == 'inactivo' ? 'selected' : '' }}>inactivo</option>
 </select>
         
+    <br>
         <button type="submit" class="btn btn-primary">Save</button> 
         <a href="{{ route('usuarios.index') }}" class="btn btn-primary">Return</a> 
       </form> 

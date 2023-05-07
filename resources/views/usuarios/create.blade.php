@@ -9,8 +9,8 @@
     } 
 
   </style> 
-  <div class="card uper"> 
-    <div class="card-header"> 
+  <div class="card uper bg-dark"> 
+    <div class="card-header bg-success"> 
       Registrar usuario 
     </div> 
     <div class="card-body"> 
@@ -52,7 +52,7 @@
         <option value="activo">activo</option>
         <option value="inactivo">inactivo</option>
     </select> 
-        
+        <br>
         <button type="submit" class="btn btn-primary">Save</button> 
         <a href="{{ route('usuarios.index') }}" class="btn btn-primary">Return</a> 
       </form> 

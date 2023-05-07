@@ -27,11 +27,9 @@
         {{ session()->get('danger') }} 
       </div><br /> 
     @endif 
-    
-      <a class="btn btn-primary" href="{{ route('usuarios.create') }}">Add</a> 
-    
-
-    <table class="table table-striped"> 
+ 
+    <a class="btn btn-success" href="{{ route('usuarios.create') }}">Add</a> 
+    <table class="table table-striped table-dark" id="tabla"> 
       <thead> 
         <tr> 
           <th>Id</th> 
