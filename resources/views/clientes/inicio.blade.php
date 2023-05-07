@@ -6,9 +6,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Buscar Orden') }}</div>
+                <div class="card-header bg-warning">{{ __('Buscar Orden') }}</div>
 
-                <div class="card-body">
+                <div class="card-body bg-dark text-white">
                     <form action="{{ route('clientes.inicio') }}" method="GET">
                         @csrf
                         
@@ -17,7 +17,7 @@
                             <label for="num_factura">{{ __('Número de Factura') }}</label>
                             <input type="number" class="form-control" name="num_factura" required>
                         </div>
-
+                        <br>
                         <button type="submit" class="btn btn-primary">{{ __('Buscar') }}</button>
                     </form>
                 </div>

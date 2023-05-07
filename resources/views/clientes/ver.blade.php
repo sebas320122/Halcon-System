@@ -6,24 +6,25 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Resultado de Búsqueda') }}</div>
+                <div class="card-header bg-warning">{{ __('Informacion de orden') }}</div>
 
-                <div class="card-body">
-                    <div class="alert alert-success" role="alert">
-                        La orden se encuentra en estado "{{ $orden->estado }}".
+                <div class="card-body bg-dark text-white">
+                    <div class="alert alert-primary" role="alert">
+                        Estado de orden: "{{ $orden->estado }}".
                         
                         <!--7.5 mostrar link de imagen enviado/entregado-->
                         
-                        @if ($orden->foto_carga)
+                        
+                    </div>   
+                    @if ($orden->foto_carga)
                             <!--<p>{{ $orden->foto_carga }}</p>-->
-                            <img src="{{ asset('storage/' . $orden->foto_carga) }}" alt="Imagen" width="400" height="300">
+                            <img src="{{ asset('storage/' . $orden->foto_carga) }}" alt="Imagen" class="img-fluid">
                         @endif
 
                         @if ($orden->foto_entrega)
                             <!--<p>{{ $orden->foto_entrega }}</p>-->
-                            <img src="{{ asset('storage/' . $orden->foto_entrega) }}" alt="Imagen" width="400" height="300">
-                        @endif
-                    </div>                   
+                            <img src="{{ asset('storage/' . $orden->foto_entrega) }}" alt="Imagen" class="img-fluid">
+                        @endif                
                 </div>
             </div>
         </div>

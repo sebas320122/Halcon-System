@@ -35,3 +35,7 @@
 - Se realizo modificaciones al diseño de las tablas de usuarios y ordenes
 - Se agrego contenido al dashboard
 - Se cambio el nombre y logo predeterminado por el de HalconSystem
+##### commit ev3pt8
+- Se le cambio el color a los cards del apartado de clientes
+- Se cambio el color y elementos del navbar del apartado de clientes
+- Las imagenes ahora son responsivas en el view de resultado
