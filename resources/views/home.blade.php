@@ -15,7 +15,7 @@
                     <!--Contenido-->
                     <div class="small-box bg-info">
   <div class="inner">
-    <h3>5</h3>
+    <h3>{{ $ordenesCount }}</h3>
     <p>Ordenes</p>
   </div>
   <div class="icon">
@@ -25,7 +25,7 @@
 </div>
 <div class="small-box bg-gradient-success">
   <div class="inner">
-    <h3>1</h3>
+    <h3>{{ $usuariosCount }}</h3>
     <p>Usuarios</p>
   </div>
   <div class="icon">

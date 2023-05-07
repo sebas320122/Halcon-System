@@ -109,7 +109,7 @@ return [
     'preloader' => [
         'enabled' => true,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+            'path' => 'vendor/adminlte/dist/img/hs_logo.png',
             'alt' => 'AdminLTE Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,
@@ -354,6 +354,11 @@ return [
                     'route'  => 'ordenes.archivadas',
                 ],
             ],
+        ],
+        [
+            'text' => 'Modo cliente',
+            'icon' => 'fas fa-fw fa-eye',
+            'route'  => 'clientes.inicio',
         ],
 
         

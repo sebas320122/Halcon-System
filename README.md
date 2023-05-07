@@ -35,7 +35,13 @@
 - Se realizo modificaciones al diseño de las tablas de usuarios y ordenes
 - Se agrego contenido al dashboard
 - Se cambio el nombre y logo predeterminado por el de HalconSystem
+#### 07/05/2023
 ##### commit ev3pt8
 - Se le cambio el color a los cards del apartado de clientes
 - Se cambio el color y elementos del navbar del apartado de clientes
 - Las imagenes ahora son responsivas en el view de resultado
+##### commit ev3pt9
+- Se agrego modo cliente en sidebar de usuario
+- Ahora el dashboard mostrara datos reales del numero de ordenes y usuarios en base de datos
+- Se cambio el logo que aparece al recargar pagina
+- Se cambio el texto del log in del apartado de usuarios

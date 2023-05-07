@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Orden;
+use App\Models\User;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $ordenesCount = Orden::count();
+        $usuariosCount = User::count();
+        
+        return view('home', compact('ordenesCount', 'usuariosCount'));
     }
 }
