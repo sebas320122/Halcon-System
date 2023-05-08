@@ -45,3 +45,5 @@
 - Ahora el dashboard mostrara datos reales del numero de ordenes y usuarios en base de datos
 - Se cambio el logo que aparece al recargar pagina
 - Se cambio el texto del log in del apartado de usuarios
+##### commit ev3pt10
+- Se alerta al usuario cuando ingresa o actualiza una orden con un material que no existe

@@ -57,6 +57,9 @@
         <div class="form-group"> 
           <label for="material_id">Material Id:</label> 
           <input type="number" class="form-control" name="material_id" /> 
+          @error('material_id')
+            <div class="text-danger">{{ $message }}</div>
+          @enderror
         </div> 
         
 

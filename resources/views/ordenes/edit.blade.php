@@ -60,6 +60,9 @@
         <div class="form-group"> 
           <label for="material_id">Material Id:</label> 
           <input type="text" class="form-control" name="material_id" value="{{ $orden->material_id }}" /> 
+          @error('material_id')
+            <div class="text-danger">{{ $message }}</div>
+          @enderror
         </div> 
 
     <!--Campo para subir fotos oculto-->

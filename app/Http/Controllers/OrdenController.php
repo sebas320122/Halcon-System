@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Orden;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class OrdenController extends Controller
 {
@@ -40,8 +41,10 @@ class OrdenController extends Controller
             'datos_fiscales' => 'required|max:300',
             'direccion' => 'required|max:200',
             'estado' => 'required',
-            'material_id' => 'required',
-          ]); 
+            'material_id' => 'required|exists:materials,id',
+            ], [
+            'material_id.exists' => 'El material ingresado es invalido',
+            ]); 
           Orden::create($validatedData); 
         
           //Devolver alerta tipo succes y notificacion
@@ -81,10 +84,12 @@ class OrdenController extends Controller
             'datos_fiscales' => 'required|max:300',
             'direccion' => 'required|max:200',
             'estado' => 'required',
-            'material_id' => 'required',
+            'material_id' => 'required|exists:materials,id',
         //7.42 modificar controlador de orden para fotos
             'foto_carga' => 'nullable', 
             'foto_entrega' => 'nullable' 
+        ], [
+            'material_id.exists' => 'El material ingresado es invalido',
       ]); 
 
       if ($request->hasFile('foto_carga')) {
